@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Assignments</h1>
+
+        <div class="assignment">
+            <h2>Check if a Number is a Multiple of 5</h2>
+            <input type="number" id="numberInput" placeholder="Enter a number">
+            <button onclick="checkMultipleOf5()">Check</button>
+            <p id="multipleOf5Result"></p>
+        </div>
+
+        <div class="assignment">
+            <h2>Grade Assignment</h2>
+            <input type="number" id="scoreInput" placeholder="Enter the student's score">
+            <button onclick="assignGrade()">Get Grade</button>
+            <p id="gradeResult"></p>
+        </div>
+
+        <div class="assignment">
+            <h2>Calculator</h2>
+            <input type="number" id="num1" placeholder="Enter first number">
+            <input type="number" id="num2" placeholder="Enter second number">
+            <label for="operatorSelect">Choose an operator:</label>
+            <select id="operatorSelect">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <button onclick="calculate()">Calculate</button>
+            <p id="calcResult"></p>
+        </div>
+
+        <div class="assignment">
+            <h2>FizzBuzz Challenge</h2>
+            <button onclick="fizzBuzz()">Run FizzBuzz</button>
+            <div id="fizzBuzzResult"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
