@@ -1,72 +1,78 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
-    width: 90%;
     max-width: 600px;
+    margin: 40px auto;
     padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    color: #333;
+    text-align: center;
+    color: #b3b3ff;
+    margin-bottom: 40px;
+    font-size: 2em;
 }
 
 .assignment {
-    margin: 20px 0;
+    margin-bottom: 40px;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #fafafa;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .assignment h2 {
-    margin-top: 0;
+    color: #b3b3ff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
 }
 
-input, select, button {
+.assignment input,
+.assignment select,
+.assignment button {
     display: block;
-    width: calc(100% - 24px);
-    padding: 10px;
+    width: calc(100% - 40px);
     margin: 10px auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-button {
-    background: #28a745;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 50%;
-    margin: 0 auto;
-}
-
-button:hover {
-    background: #218838;
-}
-
-p {
-    font-size: 1.2em;
-    color: #333;
-}
-
-pre, #fizzBuzzResult {
-    background: #333;
-    color: white;
     padding: 10px;
-    border-radius: 4px;
-    white-space: pre-wrap;
-    text-align: left;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.assignment input,
+.assignment select {
+    background-color: #555;
+    color: #fff;
+}
+
+.assignment button {
+    background-color: #800080;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.assignment button:hover {
+    background-color: #b300b3;
+}
+
+.assignment p {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+#fizzBuzzResult p {
+    color: #b3b3ff;
 }
